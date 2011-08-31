@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de">
+	<category name="wcf.acp.admintools">		
+		<item name="wcf.acp.admintools.function.wbb.boardPrefixes"><![CDATA[Präfixe kopieren]]></item>
+		<item name="wcf.acp.admintools.function.wbb.subscriptionCleanup"><![CDATA[Abonnements löschen]]></item>
+		<item name="wcf.acp.admintools.function.wbb.assignSubscripion"><![CDATA[Abonnements zuweisen]]></item>
+	</category>
+	<category name="wbb.acp.admintools">		
+		<item name="wbb.acp.admintools.function.wbb.boardPrefixes.sourceInTargetArray"><![CDATA[Das Quellforum darf nicht in der Auswahl der Zielforen enthalten sein.]]></item>
+		<item name="wbb.acp.admintools.function.wbb.boardPrefixes.noPrefixesInSource"><![CDATA[Das Quellforum besitzt keine Präfixe.]]></item>
+		<item name="wbb.acp.admintools.function.wbb.subscriptionCleanup.success"><![CDATA[{$count} Abonnements wurden erfolgreich gelöscht.]]></item>
+	</category>
+	<category name="wcf.acp.admintools.option">
+		<item name="wcf.acp.admintools.option.category.wbb"><![CDATA[Burning Board]]></item>
+		<item name="wcf.acp.admintools.option.category.wbb.boardPrefixes"><![CDATA[Präfixe kopieren]]></item>
+		<item name="wcf.acp.admintools.option.category.wbb.boardPrefixes.description"><![CDATA[Diese Funktion ermöglicht es Präfixe von einem Forum auf mehrere anderen zu kopieren. Bestehende Präfixe werden überschrieben.]]></item>
+		<item name="wcf.acp.admintools.option.category.wbb.subscriptionCleanup"><![CDATA[Abonnements löschen]]></item>
+		<item name="wcf.acp.admintools.option.category.wbb.subscriptionCleanup.description"><![CDATA[Diese Funktion löscht ungültige Abonnements. Dies können Abonnements von gelöschten Benutzer sein, oder Benutzern denen Forenrechte entzogen wurden. Diese Funktion kann als Cronjob regelmäßig ausgeführt werden.]]></item>
+		<item name="wcf.acp.admintools.option.category.wbb.assignSubscription"><![CDATA[Abonnements zuweisen]]></item>
+		<item name="wcf.acp.admintools.option.category.wbb.assignSubscription.description"><![CDATA[Diese Funktion ermöglicht es bestimmte Foren einer Benutzergruppe als Abonnement zuzuweisen.]]></item>		
+		<item name="wcf.acp.admintools.option.wbb.boardPrefixes.sourceBoard"><![CDATA[Quellforum]]></item>
+		<item name="wcf.acp.admintools.option.wbb.boardPrefixes.sourceBoard.description"><![CDATA[Wählen Sie hier das Forum aus, dessen Präfixe Sie kopieren möchten.]]></item>
+		<item name="wcf.acp.admintools.option.wbb.boardPrefixes.targetBoards"><![CDATA[Zielforen]]></item>
+		<item name="wcf.acp.admintools.option.wbb.boardPrefixes.targetBoards.description"><![CDATA[Mehrfache Markierungen sind durch zusätzliches Drücken der Taste &raquo;Strg/Ctrl&laquo; (Windows) oder &raquo;Befehl/Command&laquo; (Mac OS) möglich.]]></item>
+		<item name="wcf.acp.admintools.option.wbb.subscriptionCleanup.active"><![CDATA[Funktion aktivieren]]></item>
+		<item name="wcf.acp.admintools.option.wbb.subscriptionCleanup.active.description"><![CDATA[Diese Option muss aktiviert werden, um die Ausführung dieser Funktion zu bestätigen.]]></item>
+		<item name="wcf.acp.admintools.option.wbb.assignSubscription.boards"><![CDATA[Foren]]></item>
+		<item name="wcf.acp.admintools.option.wbb.assignSubscription.boards.description"><![CDATA[Die hier ausgewählten Foren werden der unten eingestellten Benutzergruppe als Abonnement zugewiesen.]]></item>
+		<item name="wcf.acp.admintools.option.wbb.assignSubscription.usergroup"><![CDATA[Benutzergruppe]]></item>
+		<item name="wcf.acp.admintools.option.wbb.assignSubscription.usergroup.description"><![CDATA[Den Benutzern dieser Benutzergruppe werden die oben eingestellten Foren als Abonnement zugewiesen.]]></item>		
+	</category>
+</language>

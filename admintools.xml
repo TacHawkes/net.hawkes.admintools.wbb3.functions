@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/options.xsd">
+    <import>
+			<functions>
+				
+				<function name="wbb.boardPrefixes">
+					<classpath>lib/acp/admintools/function/BoardPrefixesAdminToolsFunction.class.php</classpath>
+				</function>
+				
+				<function name="wbb.subscriptionCleanup">
+					<classpath>lib/acp/admintools/function/SubscriptionCleanupAdminToolsFunction.class.php</classpath>
+					<savesettings>1</savesettings>
+					<executeascronjob>1</executeascronjob>
+				</function>
+				
+				<function name="wbb.assignSubscription">
+					<classpath>lib/acp/admintools/function/AssignSubscriptionAdminToolsFunction.class.php</classpath>
+					<savesettings>1</savesettings>
+					<executeascronjob>1</executeascronjob>
+				</function>
+				
+			</functions>
+	    
+	    <categories>
+			
+			<category name="wbb">
+			</category>
+			
+			<category name="wbb.boardPrefixes">
+				<function>wbb.boardPrefixes</function>
+				<parent>wbb</parent>
+			</category>
+			
+			<category name="wbb.subscriptionCleanup">
+				<function>wbb.subscriptionCleanup</function>
+				<parent>wbb</parent>
+			</category>	
+			
+			<category name="wbb.assignSubscription">
+				<function>wbb.assignSubscription</function>
+				<parent>wbb</parent>
+			</category>						
+			
+	    </categories>
+	    
+	    <options>
+	    	<option name="wbb.boardPrefixes.sourceBoard">
+    			<categoryname>wbb.boardPrefixes</categoryname>
+    			<optiontype>boardsingleselect</optiontype>    			
+    			<showorder>1</showorder>
+    		</option>
+    		
+    		<option name="wbb.boardPrefixes.targetBoards">
+    			<categoryname>wbb.boardPrefixes</categoryname>
+    			<optiontype>boardmultiselect</optiontype>    			
+    			<showorder>2</showorder>
+    		</option>
+    		
+    		<option name="wbb.subscriptionCleanup.active">
+    			<categoryname>wbb.subscriptionCleanup</categoryname>
+    			<optiontype>boolean</optiontype>    			
+    			<showorder>1</showorder>
+    		</option>
+    		
+    		<option name="wbb.assignSubscription.boards">
+    			<categoryname>wbb.assignSubscription</categoryname>
+    			<optiontype>boardmultiselect</optiontype>    			
+    			<showorder>1</showorder>
+    		</option>
+    		
+    		<option name="wbb.assignSubscription.usergroup">
+    			<categoryname>wbb.assignSubscription</categoryname>
+    			<optiontype>groupsingleselect</optiontype>    			
+    			<showorder>2</showorder>
+    		</option>
+    		    		
+		</options>
+    </import>
+</data>
